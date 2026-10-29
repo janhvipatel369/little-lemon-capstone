@@ -1,0 +1,86 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f0;
+  color: #333;
+}
+
+.booking-page {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.site-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.site-header h1 {
+  color: #495e57;
+}
+
+.booking-card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 28px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px #00000012;
+}
+
+.booking-card h2 {
+  color: #495e57;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  font: inherit;
+}
+
+input:focus, select:focus, button:focus-visible {
+  outline: 3px solid #ee9972;
+  outline-offset: 2px;
+}
+
+button {
+  margin-top: 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #f4ce14;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e6bf08;
+}
+
+@media (max-width: 600px) {
+  .booking-page {
+    padding: 14px;
+  }
+
+  .booking-card {
+    padding: 20px;
+  }
+}
